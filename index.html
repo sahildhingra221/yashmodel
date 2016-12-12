@@ -8,13 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/login_popup.css">
     <script src="js/script.js"></script>
+		<script src="script.js"></script>
   </head>
   <body>
     <div id="load_screen">
       <div id="loading">Please wait while the document will be loaded.</div>
       <img src="images/spin.gif" id="gif">
     </div>
+    
+    
     
     <header class="bird-box">
       <div class="back-bird"></div>
@@ -35,8 +40,12 @@
                 <li><a href="#">Contact</a></li>
             </ul>
             <div class="login-links">
-                <a href="#">Register</a>
-                <a href="#">Log In</a>
+							<div id="page-heading">
+								<div id="page-heading-control-panel">
+									<input id="logout-button" type="button" value="Logout" />
+									<input id="login-open-button" type="button" value="Login or Sign up" />
+								</div>
+							</div>
             </div>
         </div>
         
@@ -148,5 +157,38 @@
     </footer>
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/functions.js"></script>
+    
+    
+    
+    
+    <!-- Popup content -->
+<div id="login-popup-content">
+	<article class="register-page">
+    <form class="awesome-form">
+      <br>
+        
+      
+    <div class="input-group">
+      <label>Email</label>
+      <input type="email" id="email">
+    </div>
+      
+    <div class="input-group">
+      <label>Password</label>
+      <input type="password" id="password">
+    </div>
+			
+		<input type="submit">
+		<br>
+		<a href="#">Create a new account</a>
+  </form>
+    </article>
+	
+</div>
+<!-- Overlay background -->
+<div id="popup-overlay-bg"></div>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/base.js"></script>
+	<script src="js/login_popup.js"></script>
   </body>
 </html>
